@@ -21,6 +21,8 @@ psql -v ON_ERROR_STOP=1 --host "$POSTGRES_HOSTNAME" --dbname "$POSTGRES_DB" << E
         ENCODING 'UTF8'
         CONNECTION LIMIT -1
     ;
+
+    
 EOSQL
 
 psql -v ON_ERROR_STOP=1 --host "$POSTGRES_HOSTNAME" --dbname "$MDS_DB" << EOSQL
